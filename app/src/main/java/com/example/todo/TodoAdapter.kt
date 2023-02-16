@@ -22,10 +22,6 @@ class TodoAdapter(var datalist : ArrayList<String>):RecyclerView.Adapter<ViewHol
         return datalist.size
     }
 
-    fun getAdapter() :RecyclerView.Adapter<ViewHolder> {
-        return this
-    }
-
 }
 
 class ViewHolder(private val binding: TodoItemBinding) : RecyclerView.ViewHolder(binding.root) {
