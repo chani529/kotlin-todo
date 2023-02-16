@@ -22,14 +22,10 @@ class TodoAdapter(var datalist : ArrayList<String>):RecyclerView.Adapter<ViewHol
         return datalist.size
     }
 
-    fun getAdapter() :RecyclerView.Adapter<ViewHolder> {
-        return this
-    }
-
 }
 
 class ViewHolder(private val binding: TodoItemBinding) : RecyclerView.ViewHolder(binding.root) {
-    private lateinit var adapter : TodoAdapter;
+    private lateinit var adsapter : TodoAdapter;
     fun bind(get: String) {
         binding.todo.text = get
         binding.deleteButton.setOnClickListener(View.OnClickListener() {
